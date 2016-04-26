@@ -1,0 +1,19 @@
+{
+  "name": "template-polyfill",
+  "version": "1.0.0",
+  "description": "A polyfill for the HTML5 <template> tag.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffcarp/template-polyfill.git"
+  },
+  "author": "Jeff Carpenter <gcarpenterv@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeffcarp/template-polyfill/issues"
+  },
+  "homepage": "https://github.com/jeffcarp/template-polyfill#readme"
+}

@@ -1,4 +1,6 @@
-# template-polyfill
+# template-polyfill 
+
+[![npm](https://img.shields.io/npm/v/template-polyfill.svg?maxAge=2592000?style=flat-square)](https://www.npmjs.com/package/template-polyfill)
 
 A polyfill for the HTML5 `<template>` tag.
 

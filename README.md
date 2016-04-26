@@ -13,7 +13,9 @@ npm install template-polyfill
 ```
 
 ```js
-require('template-polyfill')
+var templatePolyfill = require('template-polyfill')
+
+templatePolyfill()
 ```
 
 You'll also need:

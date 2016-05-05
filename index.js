@@ -1,7 +1,7 @@
 'use strict';
 
 function templatePolyfill() {
-  if ('content' in document.createElement('template')) {
+  if ('textContent' in document.createElement('template')) {
     return false;
   }
 

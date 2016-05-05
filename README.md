@@ -1,4 +1,4 @@
-# template-polyfill 
+# template-polyfill
 
 [![npm](https://img.shields.io/npm/v/template-polyfill.svg?maxAge=2592000?style=flat-square)](https://www.npmjs.com/package/template-polyfill)
 
@@ -18,17 +18,9 @@ var templatePolyfill = require('template-polyfill')
 templatePolyfill()
 ```
 
-You'll also need:
-
-```html
-<script>
-// In your <head> tag
-document.createElement('template');
-</script>
-```
+You'll also need to put this in your CSS:
 
 ```css
-/* In your CSS */
 template {
   display: none !important;
 }

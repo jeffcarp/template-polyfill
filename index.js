@@ -1,27 +1,23 @@
 'use strict';
 
 function templatePolyfill() {
-  if ('textContent' in document.createElement('template')) {
+  if ('content' in document.createElement('template')) {
     return false;
   }
 
-  var qPlates = document.getElementsByTagName('template'),
-    plateLen = qPlates.length,
-    elPlate,
-    qContent,
-    docContent;
+  var templates = document.getElementsByTagName('template');
+  var plateLen = templates.length;
 
   for (var x = 0; x < plateLen; ++x) {
-    elPlate = qPlates[x];
-    qContent = elPlate.childNodes;
-    contentLen = qContent.length;
-    docContent = document.createDocumentFragment();
+    var template = templates[x];
+    var content = template.childNodes;
+    var fragment = document.createDocumentFragment();
 
-    while (qContent[0]) {
-      docContent.appendChild(qContent[0]);
+    while (content[0]) {
+      fragment.appendChild(content[0]);
     }
 
-    elPlate.content = docContent;
+    template.content = fragment;
   }
 }
 
